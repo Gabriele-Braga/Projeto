@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* margin (margem) - retirar as margens que o navegador deixa por padrão 
+  padding - preenchimento 
+  target (_blank) - para clicar no link e não sair da minha página */
+}
+
+body {
+  background-image: url(./assets/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  /*background imagem - repetição - posição - tamanho
+  background-image: url(./assets/bg-mobile.jpg)
+  no re-repeat - para não repetir o fundo
+  top center - centralizar o fundo
+  cover - cobrir todo o espaço */
+}
+
+body * {
+  font-family: "Inter", serif;
+  color: black;
+
+  /* "*" seletor universal (mudar todos os códigos)*/
+}
+
+#container {
+  width: 360px;
+  margin: auto;
+  padding-top: 20px;
+
+  /*largura - altura - borda - margem - preenchimento
+  width - largura do projeto figma
+  height - altura do projeto figma
+  border
+  margin - centralizar a caixa 
+  padding-top - ajustar o topo da foto*/
+}
+
+#profile img {
+  display: block;
+  width: 112px;
+  margin: auto;
+  padding: 12px;
+
+  /*largura - display - margem - preenchimento
+  width - largura do avatar figma
+  display - inline (linha não encaixa a margem auto) block (encaixar na caixa)
+  margem - centralizar 
+  padding - distanciar a foto da escrita*/
+}
+
+#profile p {
+  text-align: center;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 45px;
+  margin-top: 2px;
+
+  /*centralizar
+  text-aling - centralizar texto
+  font's - configuração figma
+  line - configuração figma */
+}
+
+/*links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  text-decoration: none; /*retirar linha debaixo*/
+  font-weight: 500; /*tamanho da fonte*/
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
